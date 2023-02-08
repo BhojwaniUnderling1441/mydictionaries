@@ -71,7 +71,10 @@ def deal_cards(deck, number):
     
 
     # Deal the cards and accumulate their values.
-    for num in range(number): hand_value += deck.pop(random.choice(list(deck.keys())))
+    for num in range(number): 
+        card = random.choice(list(deck))
+        print(card)
+        hand_value += deck[card]
 
     # Display the value of the hand.
     print(hand_value)
