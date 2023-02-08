@@ -39,7 +39,8 @@ import json
 infile = open('eq_data.json', 'r')
 earthquakes = json.load(infile)
 
-print(len(earthquakes))
+print(f"Earthquakes: {len(earthquakes['features'])}")
+print()
 eq_dict = {}
 
 i = 0
